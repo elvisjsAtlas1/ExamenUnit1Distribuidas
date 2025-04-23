@@ -1,0 +1,25 @@
+server:
+  port: 8085
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka
+  instance:
+    hostname: localhost
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: eja-student-service
+          uri: lb://eja-student-service
+          predicates:
+            - Path=/estudiante/**
+        - id: eja-course-service
+          uri: lb://eja-course-service
+          predicates:
+            - Path=/curso/**
