@@ -1,0 +1,18 @@
+server:
+  port: 7070
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/elvisjsAtlas1/ExamenUnit1Distribuidas.git
+          searchPaths: config-data
+          default-label: main
+  security:
+    user:
+      #recordar este apartado para tus microservicios :V AGREGAMOS DESPUES SEGUN GUIA
+      name: elvis
+      password: 123456
