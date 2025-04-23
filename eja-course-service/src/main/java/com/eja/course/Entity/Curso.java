@@ -16,7 +16,6 @@ import lombok.NoArgsConstructor;
 public class Curso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_curso")
     private Long id;
     private String horarios;
     private Integer capacidad;
