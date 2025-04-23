@@ -11,9 +11,9 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI().info(new Info()
-                .title("OPEN API MICROSERVICIO DE ESTO ES MATRICULA MIERDAAAA")
+                .title("OPEN API MICROSERVICIO MATRICULA")
                 .version("0.0.1")
-                .description("Servicios web Estudiantes")
+                .description("Servicios web Matriculas")
                 .termsOfService("http://swagger.io/terms")
                 .license(new License().name("Apache 2.0").url("http://springdoc.org"))
         );
