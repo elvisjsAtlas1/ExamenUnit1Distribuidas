@@ -23,3 +23,7 @@ spring:
           uri: lb://eja-course-service
           predicates:
             - Path=/curso/**
+        - id: eja-matricula-service
+          uri: lb://eja-matricula-service
+          predicates:
+            - Path=/matricula/**

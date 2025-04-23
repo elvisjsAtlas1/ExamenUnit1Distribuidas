@@ -11,7 +11,7 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI().info(new Info()
-                .title("OPEN API MICROSERVICIO DE ESTUDIANTE")
+                .title("OPEN API MICROSERVICIO DE ESTO ES MATRICULA MIERDAAAA")
                 .version("0.0.1")
                 .description("Servicios web Estudiantes")
                 .termsOfService("http://swagger.io/terms")
